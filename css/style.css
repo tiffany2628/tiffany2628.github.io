@@ -1,8 +1,3 @@
-body, html {
-  margin: 0;
-  height: 100%;
-}
-
 body {
   padding-top: 50px;
   padding-bottom: 20px;
@@ -20,8 +15,8 @@ body {
   height: 100%;
 }
 
-.image-background.girlturntable {
-  background:url("../img/girlturntable.jpg");
+.image-background {
+  background:url("../img/turntablegirl.jpg");
   background-size: cover;
   max-width: 100%;
   height: 100%;
