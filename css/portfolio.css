@@ -9,7 +9,7 @@ body {
 }
 
 .image-background {
-  background: url("../img/turntable.jpg");
+  background-image: url("../img/girlturntable.jpg");
   background-size: cover;
   max-width: 100%;
   height: 120%;

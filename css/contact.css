@@ -8,8 +8,13 @@ body {
   padding-bottom: 20px;
 }
 
+.email-form {
+  width: 400px;
+  margin: 0 auto;
+}
+
 .image-background {
-  background: url("../img/turntable.jpg");
+  background:url("../img/falseawakening.jpg");
   background-size: cover;
   max-width: 100%;
   height: 120%;
@@ -18,4 +23,8 @@ body {
 canvas {
   position: absolute;
   top:0px;
+}
+
+label {
+  color: white;
 }

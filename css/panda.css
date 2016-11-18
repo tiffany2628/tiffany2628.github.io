@@ -1,0 +1,339 @@
+body {
+  background: #BBD149;
+}
+
+.background {
+  position: relative;
+  width: 550px;
+  height: 300px;
+}
+
+.plant-1{
+  left: 5px;
+  position: absolute;
+}
+
+.plant-2 {
+  left: 75px;
+  position: absolute;
+}
+
+.bowl {
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  width: 60px;
+  height: 30px;
+  border-radius: 100%;
+  background: #FEE225;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.cable {
+  position: absolute;
+  top: -110px;
+  left: 30px;
+  width: 3px;
+  height: 110px;
+  background: #74B530;
+}
+
+.leaf {
+  width: 30px;
+  height: 20px;
+  background: #115635;
+}
+
+.leaf-1 {
+  position: absolute;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  left: 2px;
+  animation: fly 1s infinite alternate ease-in-out;
+}
+
+.leaf-2 {
+  position: absolute;
+  top: 25px;
+  left: -30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  animation: fly 1s infinite alternate ease-in-out;
+}
+
+.leaf-3 {
+  position: absolute;
+  top: 50px;
+  left: 2px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  animation: fly .9s infinite alternate ease-in-out;
+}
+
+.leaf-4 {
+  position: absolute;
+  top: 75px;
+  left: -30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  animation: fly 1s infinite alternate ease-in-out;
+}
+
+.leaf-5 {
+  position: absolute;
+  top: -20px;
+  left: -25px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  animation: fly .7s infinite alternate ease-in-out;
+}
+
+.panda {
+  position: absolute;
+  top: 100px;
+  left: 175px;
+}
+
+.head {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 100%;
+  animation: own 2s .5s infinite alternate ease-in-out;
+}
+
+.head::after {
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+  background: #333;
+  border-radius: 100%;
+  content: "";
+  animation: ear 2s .5s infinite alternate ease-in-out;
+  z-index: -100;
+
+}
+.head::before {
+  position: absolute;
+  top: -10px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+  background: #333;
+  border-radius: 100%;
+  content: "";
+  animation: ear 2s .5s infinite alternate ease-in-out;
+  z-index: -100;
+}
+
+.face {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.eye {
+  width: 20px;
+  height: 27px;
+  background: #333;
+  border-radius: 100%;
+}
+
+.eye::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 7px;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 100%;
+  animation: blink 2.3s .6s infinite;
+}
+
+.eye-left {
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  transform: rotate(30deg);
+}
+
+.eye-right {
+  position: absolute;
+  top: 10px;
+  left: 33px;
+  transform: rotate(-30deg);
+}
+
+.nose {
+  position: absolute;
+  top: 35px;
+  left: 22px;
+  width: 15px;
+  height: 10px;
+  background: #333;
+  border-radius: 100%;
+}
+
+.body {
+  top: -5px;
+  left: 0px;
+  width: 60px;
+  height: 75px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.arm {
+  width: 23px;
+  height: 55px;
+  background: #333;
+  border-radius: 100%;
+}
+
+.arm-right {
+  position: absolute;
+  bottom: 25px;
+  left: 45px;
+  transform: rotate(-30deg);
+  animation: arm-right 2.3s .6s infinite alternate ease-in-out;
+}
+
+.arm-left {
+  position: absolute;
+  bottom: 25px;
+  left: -10px;
+  transform: rotate(30deg);
+  animation: arm-left 2.3s .6s infinite alternate ease-in-out;
+}
+
+.leg {
+  width: 25px;
+  height: 50px;
+  background: #333;
+  border-radius: 100%;
+}
+
+.leg-left {
+  position: absolute;
+  bottom: 0px;
+  left: -3px;
+  transform: rotate(10deg);
+  animation: leg-left 2.3s .6s infinite alternate ease-in-out;
+}
+
+.leg-right {
+  position: absolute;
+  bottom: 0px;
+  left: 35px;
+  transform: rotate(-10deg);
+  animation: leg-right 2.3s .6s infinite alternate ease-in-out;
+}
+
+@keyframes fly {
+  50% {transform: rotate(10deg)}
+}
+
+@keyframes own {
+  50% {transform: rotate(-10deg)}
+}
+
+@keyframes ear {
+  50% {transform: translateY(5px)}
+}
+
+@keyframes leg-left {
+  50% {transform: rotate(-10deg)}
+}
+
+@keyframes leg-right {
+  50% {transform: rotate(10deg)}
+}
+
+@keyframes arm-left {
+  50% {transform: rotate(40deg)}
+}
+
+@keyframes arm-right {
+  50% {transform: rotate(-40deg)}
+}
+
+@keyframes blink {
+  50% {background: #333;}
+  60% {background: #fff;}
+}
+
+
+        /*this is where the puhy buttons strat*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans";
+  text-align: center;
+  padding-top: 10px;
+}
+body .canvas, html .canvas {
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 20px 1px #bbb;
+}
+body .foot-wrapper, html .foot-wrapper {
+  color: #BFBFBF;
+  float: left;
+  poisition: absoulte;
+}
+body .foot-wrapper .footer, html .foot-wrapper .footer {
+  margin-top: 100vh;
+  margin-left: 20px;
+}
+
+.buttons {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  height: 100px;
+  background: #F2385A;
+  position: relative;
+  margin: 30px;
+  top: 100px;
+  padding: 16px;
+  font-size: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 0px 0px #f02046, 0px 0px 20px 0px #bbb;
+  transition: all 0.2s;
+}
+
+a:active {
+  top: 108px;
+  box-shadow: 0px 7px 0px 0px #f02046;
+}
+
+.button1 {
+  background-color: #F2385A;
+}
+
+.button2 {
+  background-color: #3498DB;
+  box-shadow: 0px 15px 0px 0px #258cd1;
+}
+.button2:active {
+  box-shadow: 0px 7px 0px 0px #258cd1;
+}
